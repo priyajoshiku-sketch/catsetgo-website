@@ -55,7 +55,7 @@
   .btn-ghost:hover{border-color:var(--rose);background:var(--card);}
 
   /* header */
-  header{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.82);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s, box-shadow .3s;}
+  header{position:sticky;top:0;z-index:50;background:rgba(244,239,230,.95);border-bottom:1px solid transparent;transition:border-color .3s, box-shadow .3s;}
   header.scrolled{border-color:var(--line);box-shadow:0 4px 20px -18px rgba(47,58,53,.6);}
   .nav{max-width:1060px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;}
   .brand{display:flex;align-items:center;gap:9px;font-family:"Bricolage Grotesque";font-weight:700;font-size:21px;}
@@ -201,11 +201,11 @@
     .book-grid{grid-template-columns:1fr;}
     .steps{grid-template-columns:repeat(2,1fr);gap:30px 16px;}
     .trail{display:none;}
-    .nav-links{position:fixed;inset:0 0 0 auto;width:min(78vw,300px);background:var(--card);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:4px;padding:86px 26px 26px;transform:translateX(100%);transition:transform .28s ease;box-shadow:-20px 0 50px -30px rgba(0,0,0,.4);}
+    .nav-links{position:fixed;inset:0 0 0 auto;height:100dvh;z-index:60;width:min(78vw,300px);background:#FCFAF5;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:4px;padding:86px 26px 26px;transform:translateX(100%);transition:transform .28s ease;box-shadow:-20px 0 50px -30px rgba(0,0,0,.4);}
     .nav-links.open{transform:none;}
     .nav-links a.lnk{font-size:18px;padding:10px 0;width:100%;border-bottom:1px solid var(--line);color:var(--ink);}
     .nav-links .btn{margin-top:14px;width:100%;justify-content:center;}
-    .menu-btn{display:block;z-index:60;}
+    .menu-btn{display:block;z-index:70;}
   }
   @media (max-width:460px){
     section{padding:56px 18px;}
