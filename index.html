@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cat Set Go — Loving Cat Sitting in West London | Fulham & Hammersmith</title>
-<meta name="description" content="Cat Set Go is a friendly, fully insured, DBS-checked cat sitter in West London. Drop-in visits so your cat stays happy at home — feeding, play, litter and photo updates. Book a free meet & greet.">
-<meta property="og:title" content="Cat Set Go — Loving Cat Sitting in West London">
-<meta property="og:description" content="Drop-in cat visits in Fulham, Hammersmith & West London. Fully insured, DBS-checked, great with senior & medical cats.">
+<title>Cat Sitter in Fulham & West London | Cat Set Go</title>
+<meta name="description" content="Cat sitter in Fulham, Hammersmith & West London. Fully insured, DBS-checked drop-in cat visits: feeding, litter, play & photo updates. Holiday & medication care. Book a free meet & greet.">
+<link rel="canonical" href="https://catsetgo.co.uk/">
+<meta property="og:title" content="Cat Sitter in Fulham & West London | Cat Set Go">
+<meta property="og:description" content="Fully insured, DBS-checked drop-in cat visits in Fulham, Hammersmith & West London. Holiday & senior cat care. Book a free meet & greet.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://catsetgo.co.uk/">
+<meta property="og:locale" content="en_GB">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -127,9 +130,8 @@
   /* about */
   .about{background:var(--paper);}
   .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center;}
-  .about-photo{background:var(--blush);border-radius:22px;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;color:var(--rose-deep);position:relative;overflow:hidden;border:1px solid var(--line);}
-  .about-photo .paw{width:90px;height:90px;opacity:.45;}
-  .about-photo small{position:absolute;bottom:14px;font-size:11px;color:var(--rose-deep);opacity:.85;}
+  .about-photo{background:var(--blush);border-radius:22px;aspect-ratio:4/5;position:relative;overflow:hidden;border:1px solid var(--line);}
+  .about-photo img{width:100%;height:100%;object-fit:cover;display:block;}
   .about-body h2{font-size:clamp(26px,4vw,36px);font-weight:600;margin-bottom:16px;}
   .about-body p{color:var(--ink-soft);margin-bottom:14px;font-size:15.5px;}
   .about-body p b{color:var(--ink);}
@@ -216,6 +218,36 @@
     .btn,.rate-card{transition:none;}
   }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://catsetgo.co.uk/#business",
+  "name": "Cat Set Go",
+  "description": "Fully insured, DBS-checked cat sitter in Fulham, Hammersmith and West London, offering drop-in cat visits, holiday care, and senior and medication care.",
+  "url": "https://catsetgo.co.uk/",
+  "image": "https://catsetgo.co.uk/priya-and-cat.jpg",
+  "email": "hello@catsetgo.co.uk",
+  "priceRange": "££",
+  "founder": { "@type": "Person", "name": "Priya" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "London",
+    "addressRegion": "Greater London",
+    "addressCountry": "GB"
+  },
+  "areaServed": ["Fulham", "Hammersmith", "Parsons Green", "Brook Green", "Shepherd's Bush", "West Kensington", "Barons Court", "Chiswick", "Chelsea", "Kensington", "Putney", "Barnes"],
+  "serviceType": ["Cat sitting", "Drop-in cat visits", "Holiday cat care", "Senior cat care", "Medication administration"],
+  "openingHours": "Mo-Su 07:00-21:00",
+  "sameAs": ["https://www.instagram.com/cat.set.go/", "https://www.tiktok.com/@cat.set.go"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" },
+  "review": [
+    { "@type": "Review", "author": { "@type": "Person", "name": "Ina" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Priya is an amazing person and a true lifesaver. She was so kind to my cat, who doesn't easily accept new people, and won her trust in a single day." },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Robyn J." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "An excellent sitter, keeping me up to date with regular photos and messages. A very happy cat, all instructions followed, and the house left immaculate." },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Megan R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Priya tops the charts. Incredibly thoughtful and patient, and she kindly helped us with a favour outside the job description. Thank you for being so wonderful!" }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -252,7 +284,7 @@
     <div>
       <p class="eyebrow">West London cat sitting</p>
       <h1>Happy cats,<br>right at <span class="accent">home.</span></h1>
-      <p class="lede">Loving drop-in visits in Fulham, Hammersmith &amp; across West London — so your cat keeps their routine while you're away.</p>
+      <p class="lede">Drop-in visits in Fulham, Hammersmith, and across West London, so your cat keeps their routine while you're away.</p>
       <div class="hero-cta">
         <a href="#book" class="btn btn-primary">Book a free meet &amp; greet</a>
         <a href="#how" class="btn btn-ghost">How it works</a>
@@ -260,7 +292,7 @@
       <div class="trust-row">
         <span><span class="dot"></span>Fully insured</span>
         <span><span class="dot"></span>DBS-checked</span>
-        <span><span class="dot"></span>Great with medical &amp; senior cats</span>
+        <span><span class="dot"></span>Great with medical and senior cats</span>
       </div>
     </div>
     <div class="hero-art">
@@ -307,7 +339,7 @@
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4v16M4 4c3 0 4 2 4 5s-1 5-4 5"/><path d="M20 4v16M12 4v16"/></svg>
         <h3>Feeding &amp; fresh water</h3>
-        <p>Meals to your cat's usual schedule, bowls cleaned, water topped up.</p>
+        <p>Meals tailored to your cat's schedule, bowls cleaned, and water topped up.</p>
       </div>
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l2-3 4 6 2-3h6"/></svg>
@@ -317,17 +349,17 @@
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg>
         <h3>Play &amp; cuddles</h3>
-        <p>Proper company and playtime — as much or as little as your cat likes.</p>
+        <p>Company and playtime, as much or as little as your cat likes.</p>
       </div>
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg>
         <h3>Photo updates</h3>
-        <p>A message and photos after every visit, so you can relax too.</p>
+        <p>An update after every visit, however you'd like it, so you can relax too.</p>
       </div>
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9-9a4.5 4.5 0 019-1 4.5 4.5 0 019 1c-2 4.5-9 9-9 9z"/></svg>
         <h3>Medication &amp; senior care</h3>
-        <p>Experienced with tablets, injections, tube-feeding and elderly cats.</p>
+        <p>Experienced with giving medication and caring for senior cats.</p>
       </div>
       <div class="inc-card reveal">
         <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg>
@@ -350,17 +382,17 @@
       <div class="step reveal">
         <div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
         <h3>1. Say hello</h3>
-        <p>Send your dates and tell me about your cat.</p>
+        <p>Send me a message and tell me about your cat.</p>
       </div>
       <div class="step reveal">
         <div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
         <h3>2. Free meet &amp; greet</h3>
-        <p>We meet in your home so your cat can get comfy with me.</p>
+        <p>We meet at your home so your cat can get comfy with me.</p>
       </div>
       <div class="step reveal">
         <div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg></div>
         <h3>3. Book &amp; relax</h3>
-        <p>Confirm, pay by bank transfer, and you're all set.</p>
+        <p>Confirm, complete payment, and you're all set.</p>
       </div>
       <div class="step reveal">
         <div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/></svg></div>
@@ -376,8 +408,8 @@
   <div class="wrap">
     <div class="sec-head reveal">
       <p class="eyebrow">Where I visit</p>
-      <h2>Covering West London</h2>
-      <p>Based in Fulham &amp; Hammersmith, visiting the surrounding neighbourhoods.</p>
+      <h2>Cat sitting across West London</h2>
+      <p>Based in Fulham and Hammersmith, visiting the surrounding neighbourhoods.</p>
     </div>
     <div class="area-chips reveal">
       <span class="core">Fulham</span>
@@ -393,7 +425,7 @@
       <span>Putney</span>
       <span>Barnes</span>
     </div>
-    <p class="fine reveal">Not sure if you're in my patch? Just ask — I'm happy to travel a little for the right cats.</p>
+    <p class="fine reveal">Not sure if you're in my patch? Just ask. I'm happy to travel a little for the right cats.</p>
   </div>
 </section>
 
@@ -401,15 +433,15 @@
 <section class="about" id="about">
   <div class="wrap about-grid">
     <div class="about-photo reveal">
-      <svg class="paw"><use href="#paw"/></svg>
-      <small>Add a photo of you &amp; a happy cat here</small>
+      <img src="priya-and-cat.jpg" alt="Priya, cat sitter in West London, with a relaxed tuxedo cat at home" loading="lazy" width="1000" height="1250">
     </div>
     <div class="about-body reveal">
       <p class="eyebrow">Hello, I'm Priya</p>
       <h2>Cats have always been my people</h2>
-      <p>I started Cat Set Go because I couldn't imagine a better way to spend my days than caring for cats in their own homes — where they're calmest and happiest.</p>
-      <p>With a background in <b>science</b> and years of hands-on experience — including fostering, senior cats, and cats needing <b>medication and tube-feeding</b> — I'm comfortable with the nervous ones, the fussy ones, and the ones who need a bit of extra care.</p>
-      <p>I'm <b>fully insured and DBS-checked</b>, and I treat every home and every cat as if they were my own. Your cat stays in their routine, and you get to travel knowing they're in safe, loving hands.</p>
+      <p>I've been a foster mum to cats for most of my adult life, rescuing, fostering, and helping nervous and injured cats find their feet since I was a student. You could say I found my <i>purr-pose</i> looking after them.</p>
+      <p>With close to six years of experience across many breeds, I'm comfortable with the shy ones, the skittish ones, and the ones who need a little medical care. I love the patience of helping a scared cat come out of its shell.</p>
+      <p>People often think cats are aloof and independent, but I've found the opposite: they're gentle, full of character, and they get lonely. They really do notice when their person is away, and that's why I do this. Your cat gets genuine company and comfort at home while you're gone, not just a food bowl being refilled.</p>
+      <p>I'm <b>fully insured and DBS-checked</b>, and I treat every home and every cat as if they were my own.</p>
     </div>
   </div>
 </section>
@@ -420,7 +452,7 @@
     <div class="sec-head reveal">
       <p class="eyebrow">Kind words</p>
       <h2>Loved by local cat parents</h2>
-      <p>A few kind words from cat parents I've had the joy of looking after.</p>
+      <p>A few kind words from the parents of cats I've had the joy of looking after.</p>
     </div>
     <div class="rev-grid">
       <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya is an amazing person whom I found accidentally on my last day before travelling — a true lifesaver. She was so kind to my cat, who doesn't easily accept new people, and it took her only one day to win her trust. Highly recommended!"</p><div class="who">— Ina · Drop-in visits</div></div>
@@ -438,12 +470,12 @@
       <h2>Questions, answered</h2>
     </div>
     <div class="faq-list reveal">
-      <details><summary>What areas do you cover?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>I'm based in Fulham and Hammersmith and visit across West London — Parsons Green, Brook Green, Shepherd's Bush, West Kensington, Barons Court, Chiswick, Chelsea, Kensington, Putney and Barnes. If you're nearby but not listed, just ask.</p></details>
-      <details><summary>Are you insured and background-checked?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Yes — Cat Set Go is fully insured, and I'm DBS-checked, so you can leave your keys and your cat with complete peace of mind.</p></details>
-      <details><summary>Can you give medication?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Absolutely. I'm experienced with tablets, injections, tube-feeding and senior or special-needs cats. A small supplement applies for medication visits, and we'll go through everything at the meet &amp; greet.</p></details>
-      <details><summary>How do the photo updates work?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>After every single visit I'll send you a message with photos and a quick note on how your cat's doing — so you're never left wondering.</p></details>
-      <details><summary>What's a meet &amp; greet?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>It's a free, no-obligation visit before you book. I come to your home, meet your cat, and we run through feeding, routines and keys — so everyone's comfortable before your trip.</p></details>
-      <details><summary>How do I pay?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Simple bank transfer once your booking's confirmed. I'll send all the details after the meet &amp; greet.</p></details>
+      <details><summary>What areas do you cover?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>I'm based in Fulham and Hammersmith, and visit across West London: Parsons Green, Brook Green, Shepherd's Bush, West Kensington, Barons Court, Chiswick, Chelsea, Kensington, Putney, and Barnes. If you're nearby but not listed, just ask.</p></details>
+      <details><summary>Are you insured and background-checked?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Yes. Cat Set Go is fully insured, and I'm DBS-checked, so you can leave your keys and your cat with complete peace of mind.</p></details>
+      <details><summary>Can you give medication?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Yes. I'm experienced with giving medication and caring for senior or special-needs cats. A small supplement applies for medication visits, and we'll go through everything at the meet &amp; greet.</p></details>
+      <details><summary>How do the updates work?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>After each visit I'll send you an update, with photos, a quick note, or whatever you'd prefer, so you're never left wondering. Just let me know what works for you.</p></details>
+      <details><summary>What's a meet &amp; greet?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>It's a free, no-obligation visit before you book. I come to your home, meet your cat, and we run through feeding, routines, and keys, so everyone's comfortable before your trip.</p></details>
+      <details><summary>How do I pay?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Once your booking's confirmed, I'll send you simple payment details. There's nothing to sort out until then.</p></details>
     </div>
   </div>
 </section>
@@ -459,12 +491,12 @@
     <div class="book-grid">
       <div class="book-card reveal">
         <h3>Quick booking form</h3>
-        <p class="muted">Tell me your dates and a little about your cat — it takes two minutes, and I'll get back to you to arrange a free meet &amp; greet.</p>
+        <p class="muted">Tell me a little about you and your cat. It takes two minutes, and I'll get back to you to arrange a free meet &amp; greet.</p>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSexrQmiQeNoDrFsRXPzet6Ib2lAfzb5wDnWXdmlPjCtQaH_hQ/viewform" class="btn btn-primary" target="_blank" rel="noopener">Fill in the booking form</a>
       </div>
       <div class="book-card reveal">
         <h3>Prefer to message?</h3>
-        <p class="muted">Send me a DM — I'm quick to reply.</p>
+        <p class="muted">Send me a DM. I'm quick to reply.</p>
         <div class="msg-list">
           <a class="msg-btn" href="https://www.instagram.com/cat.set.go/" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -491,7 +523,7 @@
     </div>
   </div>
   <div class="foot-legal">
-    Cat Set Go · Fully insured &amp; DBS-checked cat sitting in West London · catsetgo.co.uk<br>
+    Cat Set Go · Fully insured and DBS-checked cat sitting in West London · catsetgo.co.uk<br>
     © 2026 Cat Set Go. Made with love for cats.
   </div>
 </footer>
