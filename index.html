@@ -139,6 +139,16 @@
   /* testimonials */
   .reviews{background:var(--card);}
   .rev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:36px;}
+
+  /* furry clients gallery */
+  .cats{background:var(--paper);}
+  .cats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:36px;}
+  .cat-card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:transform .18s, box-shadow .18s;}
+  .cat-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);}
+  .cat-card img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;}
+  .cat-card .cat-info{padding:16px 18px 18px;}
+  .cat-card .cat-name{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:18px;color:var(--ink);}
+  .cat-card .cat-note{font-size:13.5px;color:var(--ink-soft);line-height:1.5;margin-top:5px;}
   .rev-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px;}
   .rev-card .quote{font-size:15.5px;color:var(--ink);line-height:1.6;margin-bottom:16px;}
   .rev-card .who{font-size:13.5px;font-weight:600;color:var(--sage-deep);}
@@ -240,11 +250,13 @@
   "serviceType": ["Cat sitting", "Drop-in cat visits", "Holiday cat care", "Senior cat care", "Medication administration"],
   "openingHours": "Mo-Su 07:00-21:00",
   "sameAs": ["https://www.instagram.com/cat.set.go/", "https://www.tiktok.com/@cat.set.go"],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "3" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5", "reviewCount": "5" },
   "review": [
     { "@type": "Review", "author": { "@type": "Person", "name": "Ina" }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Priya is an amazing person and a true lifesaver. She was so kind to my cat, who doesn't easily accept new people, and won her trust in a single day." },
     { "@type": "Review", "author": { "@type": "Person", "name": "Robyn J." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "An excellent sitter, keeping me up to date with regular photos and messages. A very happy cat, all instructions followed, and the house left immaculate." },
-    { "@type": "Review", "author": { "@type": "Person", "name": "Megan R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Priya tops the charts. Incredibly thoughtful and patient, and she kindly helped us with a favour outside the job description. Thank you for being so wonderful!" }
+    { "@type": "Review", "author": { "@type": "Person", "name": "Megan R." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "Priya tops the charts. Incredibly thoughtful and patient, and she kindly helped us with a favour outside the job description. Thank you for being so wonderful!" },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Irene S." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "An exceptional cat sitter! We were gone for a week and she visited twice a day, not just to feed our three cats but also to play with them. She even became friends with our most stand-offish, skittish cat." },
+    { "@type": "Review", "author": { "@type": "Person", "name": "Olivia L." }, "reviewRating": { "@type": "Rating", "ratingValue": "5" }, "reviewBody": "A sweetheart and a trusted pair of hands, experienced and amazing with cats. An active fosterer for a cat rescue charity with a big and kind heart." }
   ]
 }
 </script>
@@ -457,7 +469,71 @@
     <div class="rev-grid">
       <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya is an amazing person whom I found accidentally on my last day before travelling — a true lifesaver. She was so kind to my cat, who doesn't easily accept new people, and it took her only one day to win her trust. Highly recommended!"</p><div class="who">— Ina · Drop-in visits</div></div>
       <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya was an excellent sitter, keeping me up to date on my kitty's wellbeing with regular photos and messages. A very happy cat, all instructions followed and the house left immaculate. Would recommend her to anyone looking for a genuine cat lover!"</p><div class="who">— Robyn J. · Drop-in visits</div></div>
+      <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya is an exceptional cat sitter! We were gone for a week, and she visited twice a day, not just to feed our three cats, but also to play with them. She even became friends with our most stand-offish, skittish cat."</p><div class="who">— Irene S. · Fulham Reach</div></div>
+      <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya from Cat Set Go is a sweetheart and definitely a trusted pair of hands, experienced and amazing with cats. She is an active fosterer for a cat rescue charity with a big and kind heart that we are grateful for!"</p><div class="who">— Olivia L. · Widmore</div></div>
       <div class="rev-card reveal"><div class="stars">★★★★★</div><p class="quote">"Priya tops the charts — incredibly thoughtful and patient, and she kindly helped us with a favour outside the job description of looking after our cat. Thank you, Priya, for being so wonderful!"</p><div class="who">— Megan R. · Drop-in visits</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- MEET MY FURRY CLIENTS
+     ══════════════════════════════════════════════════════════════
+     PHOTOS: this section expects these image files in the repo:
+        jackjack.jpg   rex.jpg   puma.jpg   lil.jpg
+     Upload each one (Add file → Upload files) using EXACTLY that
+     lowercase filename, no spaces or capitals. Until a photo is
+     uploaded, that card shows a blank image — so upload all the
+     cat photos in the same commit as this file.
+
+     PHOTO FORMAT (for best results):
+        • .jpg file, square-ish works best (cards crop to a square)
+        • aim for roughly 800–1200px, under ~500KB so the page stays fast
+        • crop tight to the cat; avoid house/background details
+
+     TO ADD A NEW CAT:
+        1. Upload the photo, e.g. "mochi.jpg"
+        2. Copy one whole <div class="cat-card reveal"> ... </div> block
+        3. Paste it before the </div> that closes "cats-grid"
+        4. Change the img src + alt, the cat-name, and the cat-note
+        5. Commit. The grid re-flows automatically.
+     Only add cats whose owners have given permission.
+     ══════════════════════════════════════════════════════════════ -->
+<section class="cats" id="furry-clients">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The regulars</p>
+      <h2>Meet my furry clients</h2>
+      <p>A few of the wonderful cats I look after, shared with their families' kind permission.</p>
+    </div>
+    <div class="cats-grid">
+      <div class="cat-card reveal">
+        <img src="jackjack.jpg" alt="Jack Jack, a tabby and white cat cared for by Cat Set Go in West London" loading="lazy">
+        <div class="cat-info">
+          <div class="cat-name">Jack Jack</div>
+          <p class="cat-note">Waits at the door for me every visit, and has trained me to walk him home whenever he gets himself locked out. Greedy, cheeky, impossible not to love.</p>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <img src="rex.jpg" alt="Rex, a black cat cared for by Cat Set Go in West London" loading="lazy">
+        <div class="cat-info">
+          <div class="cat-name">Rex</div>
+          <p class="cat-note">King of his patch outdoors, shy with people indoors. His family said I might never see him — by my second visit he chose to eat right beside me. Trust, earned slowly.</p>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <img src="puma.jpg" alt="Puma, a tabby cat cared for by Cat Set Go in West London" loading="lazy">
+        <div class="cat-info">
+          <div class="cat-name">Puma</div>
+          <p class="cat-note">The gentlest of souls. A little shy at first, but the moment he settles he's a bundle of purrs, leaning in for cuddles the second I'm close.</p>
+        </div>
+      </div>
+      <div class="cat-card reveal">
+        <img src="lil.jpg" alt="Lil, a cat cared for by Cat Set Go in West London" loading="lazy">
+        <div class="cat-info">
+          <div class="cat-name">Lil</div>
+          <p class="cat-note">[Add a short line about Lil here — a personality trait, a favourite spot, or a little habit that makes you smile.]</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -475,7 +551,7 @@
       <details><summary>Can you give medication?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Yes. I'm experienced with giving medication and caring for senior or special-needs cats. A small supplement applies for medication visits, and we'll go through everything at the meet &amp; greet.</p></details>
       <details><summary>How do the updates work?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>After each visit I'll send you an update, with photos, a quick note, or whatever you'd prefer, so you're never left wondering. Just let me know what works for you.</p></details>
       <details><summary>What's a meet &amp; greet?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>It's a free, no-obligation visit before you book. I come to your home, meet your cat, and we run through feeding, routines, and keys, so everyone's comfortable before your trip.</p></details>
-      <details><summary>How do I pay?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>I'll send simple payment details once your booking's confirmed.</p></details>
+      <details><summary>How do I pay?<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></summary><p>Once your booking's confirmed, I'll send you simple payment details. There's nothing to sort out until then.</p></details>
     </div>
   </div>
 </section>
